@@ -1,0 +1,21 @@
+@import 'spacing';
+@import 'colors';
+@import 'globals';
+
+:root {
+  /* Font */
+  font-size: $size-m;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: $line-height-p;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Colors */
+  color-scheme: light dark;
+  color: var(--fontColor);
+  background-color: var(--backgroundColor0);
+}

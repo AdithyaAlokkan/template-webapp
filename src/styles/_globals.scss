@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 5rem;
+}
+
+.card {
+  background-color: var(--backgroundColor1);
+  width: fit-content;
+  padding: $size-xl;
+  padding-top: calc($size-xl / $line-height-h);
+  border-radius: 26px;
+}
+
+h1 {
+  font-size: $size-xxl;
+  font-weight: 400;
+  line-height: $line-height-h;
+  margin: 0;
+  margin-bottom: $size-s;
+}
+
+h2 {
+  font-size: $size-xl;
+  font-weight: 400;
+  line-height: $line-height-h;
+  margin: 0;
+  margin-bottom: $size-xs;
+}
+
+h3 {
+  font-size: $size-l;
+  font-weight: 400;
+  line-height: $line-height-h;
+  margin: 0;
+  margin-bottom: $size-xxs;
+}
