@@ -8,3 +8,16 @@ $space_m: 1em;
 $space_l: 1.27em;
 $space_xl: 1.62em;
 $space_xxl: 2.62em;
+
+:root {
+  --lineHeight_p: #{$lineHeight_p};
+  --lineHeight_h: #{$lineHeight_h};
+
+  --space_xxs: #{$space_xxs};
+  --space_xs: #{$space_xs};
+  --space_s: #{$space_s};
+  --space_m: #{$space_m};
+  --space_l: #{$space_l};
+  --space_xl: #{$space_xl};
+  --space_xxl: #{$space_xxl};
+}
