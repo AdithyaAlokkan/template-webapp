@@ -9,10 +9,10 @@ $fontColorDark: #ffffff;
 
 // Light Theme (Default)
 :root {
-  --backgroundColor0: #{$backgroundColorLight};
-  --backgroundColor1: #{darken($backgroundColorLight, 5%)};
-  --backgroundColor2: #{darken($backgroundColorLight, 10%)};
-  --backgroundColor3: #{darken($backgroundColorLight, 15%)};
+  --backgroundColor_0: #{$backgroundColorLight};
+  --backgroundColor_1: #{darken($backgroundColorLight, 5%)};
+  --backgroundColor_2: #{darken($backgroundColorLight, 10%)};
+  --backgroundColor_3: #{darken($backgroundColorLight, 15%)};
 
   --fontColor: #{$fontColorLight};
 }
@@ -20,10 +20,10 @@ $fontColorDark: #ffffff;
 // Dark Theme
 @media (prefers-color-scheme: dark) {
   :root {
-    --backgroundColor0: #{$backgroundColorDark};
-    --backgroundColor1: #{lighten($backgroundColorDark, 5%)};
-    --backgroundColor2: #{lighten($backgroundColorDark, 10%)};
-    --backgroundColor3: #{lighten($backgroundColorDark, 15%)};
+    --backgroundColor_0: #{$backgroundColorDark};
+    --backgroundColor_1: #{lighten($backgroundColorDark, 5%)};
+    --backgroundColor_2: #{lighten($backgroundColorDark, 10%)};
+    --backgroundColor_3: #{lighten($backgroundColorDark, 15%)};
 
     --fontColor: #{$fontColorDark};
   }

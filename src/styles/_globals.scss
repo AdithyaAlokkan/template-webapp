@@ -3,25 +3,25 @@ body {
 }
 
 h1 {
-  font-size: $space-xxl;
+  font-size: $space_xxl;
   font-weight: 400;
-  line-height: $line-height-h;
+  line-height: $lineHeight_h;
   margin: 0;
-  margin-bottom: $space-s;
+  margin-bottom: $space_s;
 }
 
 h2 {
-  font-size: $space-xl;
+  font-size: $space_xl;
   font-weight: 400;
-  line-height: $line-height-h;
+  line-height: $lineHeight_h;
   margin: 0;
-  margin-bottom: $space-xs;
+  margin-bottom: $space_xs;
 }
 
 h3 {
-  font-size: $space-l;
+  font-size: $space_l;
   font-weight: 400;
-  line-height: $line-height-h;
+  line-height: $lineHeight_h;
   margin: 0;
-  margin-bottom: $space-xxs;
+  margin-bottom: $space_xxs;
 }
