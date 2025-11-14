@@ -4,11 +4,10 @@
 
 :root {
   /* Font */
-  font-size: $size-m;
+  font-size: $space-m;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: $line-height-p;
   font-weight: 400;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

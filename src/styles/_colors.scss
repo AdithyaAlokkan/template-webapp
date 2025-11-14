@@ -2,32 +2,29 @@
 $backgroundColorLight: #ffffff;
 $backgroundColorDark: #141414;
 
+// Font Colors
+$fontColorLight: #000000;
+$fontColorDark: #ffffff;
+
+
+// Light Theme (Default)
 :root {
   --backgroundColor0: #{$backgroundColorLight};
   --backgroundColor1: #{darken($backgroundColorLight, 5%)};
   --backgroundColor2: #{darken($backgroundColorLight, 10%)};
   --backgroundColor3: #{darken($backgroundColorLight, 15%)};
+
+  --fontColor: #{$fontColorLight};
 }
 
+// Dark Theme
 @media (prefers-color-scheme: dark) {
   :root {
     --backgroundColor0: #{$backgroundColorDark};
     --backgroundColor1: #{lighten($backgroundColorDark, 5%)};
     --backgroundColor2: #{lighten($backgroundColorDark, 10%)};
     --backgroundColor3: #{lighten($backgroundColorDark, 15%)};
-  }
-}
 
-// Font Colors
-$fontColorLight: #000000;
-$fontColorDark: #ffffff;
-
-:root {
-  --fontColor: #{$fontColorLight};
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
     --fontColor: #{$fontColorDark};
   }
 }

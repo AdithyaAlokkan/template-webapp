@@ -1,36 +1,37 @@
 body {
   margin: 0;
-  padding: 5rem;
 }
 
+// LEG
 .card {
   background-color: var(--backgroundColor1);
   width: fit-content;
-  padding: $size-xl;
-  padding-top: calc($size-xl / $line-height-h);
+  padding: $space-xl;
+  padding-top: calc($space-xl / $line-height-h);
   border-radius: 26px;
 }
+//
 
 h1 {
-  font-size: $size-xxl;
+  font-size: $space-xxl;
   font-weight: 400;
   line-height: $line-height-h;
   margin: 0;
-  margin-bottom: $size-s;
+  margin-bottom: $space-s;
 }
 
 h2 {
-  font-size: $size-xl;
+  font-size: $space-xl;
   font-weight: 400;
   line-height: $line-height-h;
   margin: 0;
-  margin-bottom: $size-xs;
+  margin-bottom: $space-xs;
 }
 
 h3 {
-  font-size: $size-l;
+  font-size: $space-l;
   font-weight: 400;
   line-height: $line-height-h;
   margin: 0;
-  margin-bottom: $size-xxs;
+  margin-bottom: $space-xxs;
 }
