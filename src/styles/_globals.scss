@@ -2,16 +2,6 @@ body {
   margin: 0;
 }
 
-// LEG
-.card {
-  background-color: var(--backgroundColor1);
-  width: fit-content;
-  padding: $space-xl;
-  padding-top: calc($space-xl / $line-height-h);
-  border-radius: 26px;
-}
-//
-
 h1 {
   font-size: $space-xxl;
   font-weight: 400;
