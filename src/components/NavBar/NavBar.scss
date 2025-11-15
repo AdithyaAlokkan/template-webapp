@@ -1,20 +1,47 @@
+$nav_padding: var(--space_l);
+$nav_logo_height: var(--space_xxl);
+$nav_compact_padding: var(--space_m);
+$nav_logo_compact_height: var(--space_xl);
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   width: 100%;
-  padding: var(--space_l);
+  padding: $nav_padding;
   background-color: color-mix(in srgb, var(--backgroundColor_0) 75%, transparent);
   backdrop-filter: blur(10px);
   transition: padding 0.15s ease-in;
 
   @media (prefers-color-scheme: dark) {
     background-color: color-mix(in srgb, var(--backgroundColor_0) 90%, transparent);
+    // background-color: green; // TEST
+  }
+
+  @media (max-width: 600px) {
+    display: block;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .menuIcon {
+      display: none;
+      height: var(--space_xl);
+      width: var(--space_xl);
+      fill: var(--fontColor);
+
+      @media (max-width: 600px) {
+        display: block;
+      }
+    }
   }
 
   .logo {
-    height: var(--space_xxl);
+    height: $nav_logo_height;
     transition: height 0.15s ease-in;
   }
 
@@ -24,8 +51,24 @@ nav {
     list-style: none;
     margin: 0;
     padding: 0;
-    font-size: var(--space_l);
+    font-size: var(--space_xl);
     transition: font-size 0.15s ease-in;
+
+    @media (max-width: 600px) {
+      display: block;
+      margin-top: var(--space_l);
+      font-size: var(--space_xl) !important;
+
+      &.collapsed {
+        display: none;
+      }
+    }
+
+    li {
+      @media (max-width: 600px) {
+        padding: var(--space_xxs) 0 var(--space_xxs) 0;
+      }
+    }
   }
 
   a {
@@ -34,14 +77,25 @@ nav {
   }
 
   &.compact {
-    padding: var(--space_m);
+    padding-top: $nav_compact_padding;
+    padding-bottom: $nav_compact_padding;
 
     .logo {
-      height: var(--space_xl);
+      height: $nav_logo_compact_height;
     }
 
     ul {
-      font-size: var(--space_m);
+      font-size: var(--space_l);
     }
+  }
+}
+
+.spacer {
+  height: calc(2 * $nav_padding + $nav_logo_height);
+  width: 100%;
+  transition: height 0.15s ease-in;
+
+  &.compact {
+    height: calc(2 * $nav_compact_padding + $nav_logo_compact_height);
   }
 }

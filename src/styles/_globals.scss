@@ -32,3 +32,11 @@ h3 {
   margin: 0;
   margin-bottom: $space_xxs;
 }
+
+button {
+  all: unset;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
