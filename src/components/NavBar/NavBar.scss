@@ -51,13 +51,13 @@ nav {
     list-style: none;
     margin: 0;
     padding: 0;
-    font-size: var(--space_xl);
+    font-size: var(--space_l);
     transition: font-size 0.15s ease-in;
 
     @media (max-width: 600px) {
       display: block;
       margin-top: var(--space_l);
-      font-size: var(--space_xl) !important;
+      font-size: var(--space_l) !important;
 
       &.collapsed {
         display: none;
@@ -85,7 +85,7 @@ nav {
     }
 
     ul {
-      font-size: var(--space_l);
+      font-size: var(--space_m);
     }
   }
 }
